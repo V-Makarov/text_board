@@ -35,7 +35,7 @@ class MessagesController < ApplicationController
   end
 
   def destroy
-    @message.destroy
+    Message.where(id: @message.id).destroy_all
     redirect_to root_path
   end
 
