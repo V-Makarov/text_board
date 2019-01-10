@@ -14,6 +14,8 @@ gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'simple_form', '~> 4.1'
 gem 'bootstrap-sass', '~> 3.4'
+# Devise is a flexible authentication solution for Rails based on Warden.
+gem 'devise', '~> 4.5'
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
