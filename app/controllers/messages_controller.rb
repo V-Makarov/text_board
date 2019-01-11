@@ -35,6 +35,10 @@ class MessagesController < ApplicationController
   end
 
   def destroy
+    comments = Comment.where("message_id = " + @message.id.to_s).all
+    comments.each do |cur_comment|
+      cur_comment.destroy
+    end
     Message.where(id: @message.id).destroy_all
     redirect_to root_path
   end
